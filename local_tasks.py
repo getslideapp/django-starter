@@ -56,4 +56,4 @@ def manage(ctx, cmd):
     venv_python = config_dict['VENV_PYTHON']
 
     # Switched to run via fabric as invoke was not displaying stdout correctly
-    execute(local('{python} src/manage.py {cmd}'.format(python=venv_python, cmd=cmd)))
+    execute(local,'{python} src/manage.py {cmd}'.format(python=venv_python, cmd=cmd))
